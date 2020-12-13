@@ -1,0 +1,85 @@
+@import 'src/assets/sass/colors';
+
+a {
+  text-transform: none;
+  text-decoration: none;
+}
+
+.prediction {
+  cursor: pointer;
+  width: 40rem;
+  height: 18rem;
+  overflow: hidden;
+  background-color: $background-light;
+  border-radius: 16px;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $gray;
+
+  &__league {
+    &-federation {
+      font-weight: 200;
+    }
+    &-name {
+      font-weight: 600;
+    }
+  }
+
+  &__date {
+    font-weight: 200;
+  }
+
+  &__competitors {
+    margin-top: 1.7rem;
+    font-size: 1.8rem;
+    width: 100%;
+    display: flex;
+    color: $white;
+    align-items: center;
+
+    &-home {
+      text-align: left;
+      width: 45%;
+    }
+
+    &-versus {
+      text-align: center;
+      width: 10%;
+      font-size: 1.4rem;
+    }
+
+    &-away {
+      width: 45%;
+      text-align: right;
+    }
+  }
+
+  &__odds {
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    &-odd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-option {
+      display: block;
+      margin-right: 1rem;
+      width: 2rem;
+      text-align: right;
+    }
+
+    &-value {
+      color: $secondary;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "src/assets/sass/colors";
+
+.menu {
+  font-size: 1.8rem;
+  &__title {
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+
+  &__option {
+    margin-bottom: 0.3rem;
+    color: $secondary;
+    cursor: pointer;
+
+    &--selected {
+      color: #73EA2B;
+    }
+  }
+
+}

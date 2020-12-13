@@ -1,0 +1,16 @@
+.home {
+  .predictions {
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 2rem;
+
+    &__items {
+      height: 46rem;
+      overflow: auto;
+      width: 95vw;
+      margin-left: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
